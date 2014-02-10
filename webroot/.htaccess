@@ -1,0 +1,5 @@
+Options -Indexes
+RewriteEngine On
+
+RewriteRule ^signin$ signin.php [L]
+RewriteRule ^signup$ signup.php [L]

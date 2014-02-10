@@ -1,0 +1,20 @@
+<div class="background"><img:webroot src="/resources/images/homepage/9.jpg"></div>
+<section id="me-name" class="me-name">{name}</section>
+<nav class="menu">
+	<a id="menu-latest" class="menu-item">New Folder &#x00BB;</a>
+
+<?php	foreach ($galleries as $id=>$gallery) { ?>
+
+	<section id="menu-gallery-<?php echo $id ?>" class="menu-item" 
+
+		<?php echo $gallery["name"] ?>&#x00BB;
+		<aside class="thumbnails" id="thumbnails-$id">
+<?php			foreach ($gallery["thumbnails"] as $id=>$thumbnail ?>
+			<img class="thumbnail" src="<php echo $thumbnail ?>">
+		</aside>
+
+	</section>
+
+<?php	} ?>
+
+</nav>
